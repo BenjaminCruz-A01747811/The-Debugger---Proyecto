@@ -30,7 +30,7 @@ public class CambiarRotacion : MonoBehaviour
         barrel = childBarrel.GetComponent<Transform>();
         effect = childEffect.GetComponent<Transform>();
         */
-    }
+    }                          
 
     private void Update()
     {
@@ -43,7 +43,8 @@ public class CambiarRotacion : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (anguloGrados < 80 && anguloGrados > -80)
+        //if (anguloGrados < 80 && anguloGrados > -80)
+        if (anguloGrados < 90 && anguloGrados > -90)
         {
             SpriteRenderer.flipY = false;
             /**
@@ -55,7 +56,7 @@ public class CambiarRotacion : MonoBehaviour
             }
             */
         }
-        else if (anguloGrados > 80 || anguloGrados < -80)
+        else //if (anguloGrados > 90 || anguloGrados > -90)//if (anguloGrados > 80 || anguloGrados < -80)
         {
             SpriteRenderer.flipY = true;
             /**if(y == 0)
