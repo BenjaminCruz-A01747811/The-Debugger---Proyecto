@@ -3995,6 +3995,58 @@ PrefabInstance:
       objectReference: {fileID: 8660929105221712860}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd85ffeee67de8f49a3b1622dd71186a, type: 3}
+--- !u!1 &506776626
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 506776628}
+  - component: {fileID: 506776627}
+  m_Layer: 0
+  m_Name: EfectoMuerteEnemigo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &506776627
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506776626}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+--- !u!4 &506776628
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506776626}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.124216, y: 2.6277158, z: -0.05632883}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &533875228
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7600,6 +7652,14 @@ PrefabInstance:
     - target: {fileID: 9033259588908777381, guid: 71c1bf17e4b9249498706e0be2a83cde, type: 3}
       propertyPath: m_Name
       value: Main_Character
+      objectReference: {fileID: 0}
+    - target: {fileID: 9033259588908777383, guid: 71c1bf17e4b9249498706e0be2a83cde, type: 3}
+      propertyPath: velocityX
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 9033259588908777383, guid: 71c1bf17e4b9249498706e0be2a83cde, type: 3}
+      propertyPath: velocityY
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71c1bf17e4b9249498706e0be2a83cde, type: 3}
