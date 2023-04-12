@@ -160,7 +160,7 @@ GameObject:
   - component: {fileID: 9033259588908777385}
   - component: {fileID: 9033259588908777382}
   - component: {fileID: 9033259588908777383}
-  - component: {fileID: 9033259588908777387}
+  - component: {fileID: 3135842680225257871}
   - component: {fileID: 9033259588908777384}
   - component: {fileID: 9005295666757859044}
   m_Layer: 0
@@ -273,8 +273,8 @@ MonoBehaviour:
   velocityY: 3
   velocityX: 3
   Gun: {fileID: 9033259587664960229}
---- !u!61 &9033259588908777387
-BoxCollider2D:
+--- !u!60 &3135842680225257871
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -296,9 +296,13 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.19, y: 0.29}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.074999996, y: 0.145}
+      - {x: -0.095, y: 0.105}
+      - {x: -0.095, y: -0.145}
+      - {x: 0.095, y: -0.145}
+      - {x: 0.095, y: 0.145}
 --- !u!50 &9033259588908777384
 Rigidbody2D:
   serializedVersion: 4
@@ -333,6 +337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida: 100
+  maximoVida: 0
 --- !u!1001 &391066178931385952
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -350,11 +355,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4660875639239127488, guid: c5403eaf92853a944a9ef21f2a0ac61e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9781
+      value: 0.36178985
       objectReference: {fileID: 0}
     - target: {fileID: 4660875639239127488, guid: c5403eaf92853a944a9ef21f2a0ac61e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.992
+      value: 0.97156954
       objectReference: {fileID: 0}
     - target: {fileID: 4660875639239127488, guid: c5403eaf92853a944a9ef21f2a0ac61e, type: 3}
       propertyPath: m_LocalScale.z
@@ -362,11 +367,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4660875639239127488, guid: c5403eaf92853a944a9ef21f2a0ac61e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.1664
+      value: 0.0647
       objectReference: {fileID: 0}
     - target: {fileID: 4660875639239127488, guid: c5403eaf92853a944a9ef21f2a0ac61e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0206
+      value: 0.0221
       objectReference: {fileID: 0}
     - target: {fileID: 4660875639239127488, guid: c5403eaf92853a944a9ef21f2a0ac61e, type: 3}
       propertyPath: m_LocalPosition.z

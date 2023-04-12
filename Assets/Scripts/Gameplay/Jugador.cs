@@ -5,7 +5,6 @@ using UnityEngine;
 public class Jugador : MonoBehaviour
 {
     [SerializeField] float vida;
-
     [SerializeField] float maximoVida;
 
     private void Start()
@@ -13,7 +12,7 @@ public class Jugador : MonoBehaviour
         vida = maximoVida;
     }
 
-    public void TomarDaño2(float daño2)
+    public void TomarDaño2(float daño2) // Cambio de nombre del método
     {
         vida -= daño2;
         if (vida <= 0)
@@ -22,7 +21,7 @@ public class Jugador : MonoBehaviour
         }
     }
 
-    public void Curar(int curacion)
+    /*public void Curar(int curacion)
     {
         if((vida + curacion) > maximoVida)
         {
@@ -32,7 +31,5 @@ public class Jugador : MonoBehaviour
         {
             vida += curacion;
         }
-    }
-
+    }*/
 }
-
