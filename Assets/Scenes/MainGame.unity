@@ -6189,6 +6189,10 @@ PrefabInstance:
       propertyPath: "da\xF1o2"
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 8316839820170175830, guid: dd85ffeee67de8f49a3b1622dd71186a, type: 3}
+      propertyPath: "tiempoEntreDa\xF1o"
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd85ffeee67de8f49a3b1622dd71186a, type: 3}
 --- !u!1 &1932967326
@@ -7396,6 +7400,14 @@ PrefabInstance:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 9005295666757859044, guid: 71c1bf17e4b9249498706e0be2a83cde, type: 3}
+      propertyPath: vida
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9005295666757859044, guid: 71c1bf17e4b9249498706e0be2a83cde, type: 3}
+      propertyPath: maximoVida
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 9033259587664960228, guid: 71c1bf17e4b9249498706e0be2a83cde, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -7480,9 +7492,13 @@ PrefabInstance:
       propertyPath: velocityY
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 9033259588908777384, guid: 71c1bf17e4b9249498706e0be2a83cde, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9033259588908777387, guid: 71c1bf17e4b9249498706e0be2a83cde, type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71c1bf17e4b9249498706e0be2a83cde, type: 3}

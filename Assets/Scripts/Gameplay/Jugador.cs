@@ -4,14 +4,33 @@ using UnityEngine;
 
 public class Jugador : MonoBehaviour
 {
-    [SerializeField] private float vida;
+    [SerializeField] float vida;
 
-    public void TomarDanio(float daño2)
+    [SerializeField] float maximoVida;
+
+    private void Start()
+    {
+        vida = maximoVida;
+    }
+
+    public void TomarDaño2(float daño2)
     {
         vida -= daño2;
         if (vida <= 0)
         {
             Destroy(gameObject);
+        }
+    }
+
+    public void Curar(int curacion)
+    {
+        if((vida + curacion) > maximoVida)
+        {
+            vida = maximoVida;
+        }
+        else
+        {
+            vida += curacion;
         }
     }
 
